@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!-- Created By Mitansh -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Request Lyrics - Lyric Station</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<style>
+	.Follow-Us{
+	margin-left: 70%;
+	padding-top: 6%;
+}
+.next{
+text-decoration:none;
+display:inline-block;
+padding-top: 30px; 
+padding-left: 580px;
+color: black;
+font-family: "Gill Sans", sans-serif;
+}
+	</style>
+  </head>
+  <body>
+  
+  <!--Nav bar design Starts from here-->
+  
+    <nav>
+      <div class="menu-icon">
+<span class="fas fa-bars"></span></div>
+
+<div class="logo">
+<img src = "lyrics.png" width="70%"></div>
+
+<div class="nav-items">
+<li><a href="Index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="Request Lyrics.html">Request Lyrics</a></li>
+</div>
+<div class="search-icon">
+<span class="fas fa-search"></span></div>
+<div class="cancel-icon">
+<span class="fas fa-times"></span></div>
+<form action="#">
+        <input type="search" class="search-data" placeholder="Search" required>
+        <button type="submit" class="fas fa-search"></button>
+      </form>
+</nav>
+    <div class="Next buttons">
+	 <a href="Index.html" class="next">Home &nbsp › </a> &nbsp Request Lyrics
+    </div>
+	<br>
+	
+	<div class="request">
+	REQUEST LYRICS
+	</div><br>
+	
+	<!-- NAV BAR DESIGN ENDS HERE -->
+	<hr></hr>
+	
+	<!--FOLLOW US DESIGN STARTS HERE-->
+	
+	 <div class="Follow-Us">
+      <div class="follow">Contact Us</div> <br>
+	<center><hr width="75%"></hr></center>
+	<br>
+	
+	<a href="https://www.facebook.com/mitansh.choudhary.227/"><img src="fb.png" class= "girl"></a>
+	<a href="https://www.instagram.com/innocent_mitti/"><img src="insta.png" class= "in"></a>
+	<a href="mailto:legendaryuser.227@gmail.com"><img src="gmail.png" class= "gmail"></a>
+	
+	</div>
+	
+	<!--FORM DESIGN ENDS HERE-->
+	
+	<br><br><br><br><br><br><br><br><br>
+	
+	<!--FORM DESIGN STARTS FROM HERE-->
+	
+	<section>
+  <div class="container">
+    <form action="https://formspree.io/f/mjvpzrln" method="POST" id="my-form">
+
+      <div class="form-group">
+        <label for="firstName"> <b>Your Name</b><font color="red"> *</font></label><br>
+        <input type="text" id="firstName" name="firstName" placeholder = "  Mitansh" required>
+     
+&nbsp &nbsp
+      
+        
+        <input type="text" id="lastName" name="lastName" placeholder = "  Choudhary" required>
+      </div>
+	  <g>
+First &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Last 
+      </g>
+	  <br><br>
+      <div class="group">
+        <label for="email"><b>Your Email</b><font color="red"> *</font></label><br>
+        <input type="email" id="email" name="email" required><br>
+		<g>We will not publish your email.</g>
+      </div>
+	  <br>
+	  <div class="group">
+        <label for="massage"><b>Song Title</b><font color="red"> *</font></label><br>
+        <input type="text" id="firstName" name="firstName" required>
+      </div>
+<br>
+	   <div class="group">
+        <label for="firstName"><b>Movie/Album Name</b></label><br>
+        <input type="text" id="firstName" name="firstName">
+      </div>
+	  <br>
+	  <div class="group">
+        <label for="firstName"><b>Year of Movie/Album</b></label><br>
+        <input type="text" id="firstName" name="firstName">
+      </div>
+	  <br>
+	  <div class="group">
+        <label for="firstName"><b>Music Director(s)</b></label><br>
+        <input type="text" id="firstName" name="firstName">
+      </div>
+	  <br>
+	   <div class="group">
+        <label for="firstName"><b>Lyricist(s)</b></label><br>
+        <input type="text" id="firstName" name="firstName">
+      </div>
+	  <br>
+	   <div class="group">
+        <label for="firstName"><b>Singer(s)</b></label><br>
+        <input type="text" id="firstName" name="firstName">
+      </div>
+	  <br>
+      <div class="group">
+        <label for="massage"><b>Message</b><font color="red"> *</font></label><br>
+        <textarea name="massage" id="massage" cols="30" rows="10" required></textarea>
+      </div>
+	 <br>
+      <div class="submit button">
+      <button type="submit"><b>Submit</b></button>
+    </form>
+  </div>
+  <div id="status"></div>
+</section>	
+    
+	
+	
+	
+   
+	
+	
+<script>
+    const menuBtn = document.querySelector(".menu-icon span");
+    const searchBtn = document.querySelector(".search-icon");
+    const cancelBtn = document.querySelector(".cancel-icon");
+    const items = document.querySelector(".nav-items");
+    const form = document.querySelector("form");
+    menuBtn.onclick = ()=>{
+      items.classList.add("active");
+      menuBtn.classList.add("hide");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+    cancelBtn.onclick = ()=>{
+      items.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      searchBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      form.classList.remove("active");
+      cancelBtn.style.color = "#ff3d00";
+    }
+    searchBtn.onclick = ()=>{
+      form.classList.add("active");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+  </script>
+
+  </body>
+</html>
